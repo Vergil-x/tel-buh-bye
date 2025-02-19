@@ -19,8 +19,12 @@ You can build the image that included in this source. E.g. `docker build . -t bu
 
 Or, you can pull the image from my Docker Hub: `docker pull kocoji/buhbye`
 - Run it (Sample commands, remember to replace your env variables!):
+- Linux
   - `getlist` cmd: `docker run --rm -it -v $(pwd)/data:/usr/src/app/data -e API_ID=12345678 -e API_HASH='daae74e0549286ae54b4d60c8b9a6c89a' buhbye getlist`
   - `bye` cmd: `docker run --rm -it -v $(pwd)/data:/usr/src/app/data -e API_ID=12345678 -e API_HASH='daae74e0549286ae54b4d60c8b9a6c89a' buhbye bye --force`
+- Windows
+  - `getlist` cmd: `docker run --rm -it -v ${PWD}/data:/usr/src/app/data -e API_ID=12345678 -e API_HASH='daae74e0549286ae54b4d60c8b9a6c89a' buhbye getlist`
+  - `bye` cmd: `docker run --rm -it -v ${PWD}/data:/usr/src/app/data -e API_ID=12345678 -e API_HASH='daae74e0549286ae54b4d60c8b9a6c89a' buhbye bye --force`
 
 # Commands
 Currently, this script has 2 commands:
